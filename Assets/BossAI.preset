@@ -1,0 +1,379 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BossAI
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: e89010bd5b64b7a45b6fefbe1cec2c65,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actionCandidates.Array.size
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actionCandidates.Array.data[0]
+    value: Attack
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actionCandidates.Array.data[1]
+    value: Colour
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actionCandidates.Array.data[2]
+    value: Fire
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actionCandidates.Array.data[3]
+    value: Follow
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actionCandidates.Array.data[4]
+    value: Idle
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actionCandidates.Array.data[5]
+    value: Wander
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: scorerConditionCandidates.Array.size
+    value: 7
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: scorerConditionCandidates.Array.data[0]
+    value: IsInAttackMode
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: scorerConditionCandidates.Array.data[1]
+    value: IsInColourMode
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: scorerConditionCandidates.Array.data[2]
+    value: IsInFireMode
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: scorerConditionCandidates.Array.data[3]
+    value: IsInFollowMode
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: scorerConditionCandidates.Array.data[4]
+    value: IsInIdleMode
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: scorerConditionCandidates.Array.data[5]
+    value: IsInWanderMode
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: scorerConditionCandidates.Array.data[6]
+    value: PlayerIsInRangeOfView
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: scorerCurveCandidates.Array.size
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: scorerCurveCandidates.Array.data[0]
+    value: DistanceFromPlayer
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: displayScorers.Array.size
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: displayScorers.Array.data[0]
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: displayScorers.Array.data[1]
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: displayScorers.Array.data[2]
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: displayScorers.Array.data[3]
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.size
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[0].scorers.Array.size
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[0].scorers.Array.data[0].isCondition
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[0].scorers.Array.data[0].not
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[0].scorers.Array.data[0].score
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[0].scorers.Array.data[0].curve.m_Curve.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[0].scorers.Array.data[0].curve.m_PreInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[0].scorers.Array.data[0].curve.m_PostInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[0].scorers.Array.data[0].curve.m_RotationOrder
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[0].scorers.Array.data[0].method
+    value: IsInPunchMode
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[0].scorers.Array.data[0].index
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[0].index
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[0].score
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[0].method
+    value: Attack
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[0].active
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[0].isStoppable
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[0].isRunning
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[1].scorers.Array.size
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[1].scorers.Array.data[0].isCondition
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[1].scorers.Array.data[0].not
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[1].scorers.Array.data[0].score
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[1].scorers.Array.data[0].curve.m_Curve.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[1].scorers.Array.data[0].curve.m_PreInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[1].scorers.Array.data[0].curve.m_PostInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[1].scorers.Array.data[0].curve.m_RotationOrder
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[1].scorers.Array.data[0].method
+    value: IsInColourMode
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[1].scorers.Array.data[0].index
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[1].index
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[1].score
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[1].method
+    value: Colour
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[1].active
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[1].isStoppable
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[1].isRunning
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[2].scorers.Array.size
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[2].scorers.Array.data[0].isCondition
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[2].scorers.Array.data[0].not
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[2].scorers.Array.data[0].score
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[2].scorers.Array.data[0].curve.m_Curve.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[2].scorers.Array.data[0].curve.m_PreInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[2].scorers.Array.data[0].curve.m_PostInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[2].scorers.Array.data[0].curve.m_RotationOrder
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[2].scorers.Array.data[0].method
+    value: IsInFireMode
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[2].scorers.Array.data[0].index
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[2].index
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[2].score
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[2].method
+    value: Fire
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[2].active
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[2].isStoppable
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[2].isRunning
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[3].scorers.Array.size
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[3].scorers.Array.data[0].isCondition
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[3].scorers.Array.data[0].not
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[3].scorers.Array.data[0].score
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[3].scorers.Array.data[0].curve.m_Curve.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[3].scorers.Array.data[0].curve.m_PreInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[3].scorers.Array.data[0].curve.m_PostInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[3].scorers.Array.data[0].curve.m_RotationOrder
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[3].scorers.Array.data[0].method
+    value: IsInFollowMode
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[3].scorers.Array.data[0].index
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[3].index
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[3].score
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[3].method
+    value: Follow
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[3].active
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[3].isStoppable
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: actions.Array.data[3].isRunning
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: updateRate
+    value: 0.02
+    objectReference: {fileID: 0}

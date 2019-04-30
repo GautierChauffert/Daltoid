@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: variants_44
+  m_Shaders:
+  - first: {fileID: 66, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 75, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: 
+        passType: 12
+  - first: {fileID: 207, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 10800, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL ETC1_EXTERNAL_ALPHA PIXELSNAP_ON
+        passType: 4
+      - keywords: DIRECTIONAL ETC1_EXTERNAL_ALPHA LIGHTPROBE_SH PIXELSNAP_ON
+        passType: 4
+      - keywords: DIRECTIONAL ETC1_EXTERNAL_ALPHA LIGHTPROBE_SH PIXELSNAP_ON VERTEXLIGHT_ON
+        passType: 4
+      - keywords: ETC1_EXTERNAL_ALPHA PIXELSNAP_ON SPOT
+        passType: 5
+      - keywords: DIRECTIONAL ETC1_EXTERNAL_ALPHA PIXELSNAP_ON
+        passType: 5
+      - keywords: ETC1_EXTERNAL_ALPHA PIXELSNAP_ON POINT
+        passType: 5
+      - keywords: ETC1_EXTERNAL_ALPHA PIXELSNAP_ON
+        passType: 6
+      - keywords: ETC1_EXTERNAL_ALPHA PIXELSNAP_ON
+        passType: 7
+      - keywords: ETC1_EXTERNAL_ALPHA PIXELSNAP_ON UNITY_HDR_ON
+        passType: 7
+      - keywords: ETC1_EXTERNAL_ALPHA PIXELSNAP_ON
+        passType: 10
+      - keywords: ETC1_EXTERNAL_ALPHA PIXELSNAP_ON UNITY_HDR_ON
+        passType: 10
+  - first: {fileID: 9000, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9001, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9002, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9003, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9004, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: ETC1_EXTERNAL_ALPHA
+        passType: 0
+  - first: {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 2c459b89a7c8b1a4fbefe0d81341651c, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 382151503e2a43a4ebb7366d1632731d, type: 3}
+    second:
+      variants:
+      - keywords: CHROMATIC_ABERRATION_LOW VIGNETTE
+        passType: 0
+      - keywords: CHROMATIC_ABERRATION_LOW FINALPASS VIGNETTE
+        passType: 0
+  - first: {fileID: 4800000, guid: 4bf4cff0d0bac3d43894e2e8839feb40, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 81af42a93ade3dd46a9b583d4eec76d6, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: cdbdb71de5f9c454b980f6d0e87f0afb, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: f75014305794b3948a3c6d5ccd550e05, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FXAA_LOW
+        passType: 0
+  - first: {fileID: 4800000, guid: 7a82e25a697720d44b3026043f336606, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 7b452c502534a0246ab7709c042d381f, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: e45d4f28262b04d10a075856ab5fdb5e, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 7ea8cfee2809541fa81c5ed422ded933, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 83da3aecb8b462f498946f5198cbd58e, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 136ab50fe2b9ad64d9c22adc3668abb7, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: DISTORT
+        passType: 0
+      - keywords: VIGNETTE_BLUR VIGNETTE_FILMIC
+        passType: 0
+      - keywords: DISTORT VIGNETTE_BLUR VIGNETTE_FILMIC
+        passType: 0
+      - keywords: CHROMATIC_ABERRATION
+        passType: 0
+      - keywords: VIGNETTE_CLASSIC
+        passType: 0
+      - keywords: DISTORT VIGNETTE_CLASSIC
+        passType: 0
+      - keywords: VIGNETTE_BLUR VIGNETTE_CLASSIC VIGNETTE_DESAT
+        passType: 0

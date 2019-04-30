@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 7ef1906b7552322478546f4da140534c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Octagonal
+  fontNames:
+  - Octagonal
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 6b9a02378d68c594da8b43b8d02798f8, type: 3}
+  - {fileID: 12800000, guid: 7aee454a3d0564b4d8f8d87ad389fd5f, type: 3}
+  - {fileID: 12800000, guid: 41bccafccd0167e4487369d1def6b785, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

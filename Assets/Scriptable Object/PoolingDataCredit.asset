@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811946ed8e2d6024c84bbdc811ec6773, type: 3}
+  m_Name: PoolingDataCredit
+  m_EditorClassIdentifier: 
+  pools:
+  - prefab: {fileID: 191952030133179141, guid: ca705f0a5b5fc7647989b35377f18124, type: 3}
+    size: 200

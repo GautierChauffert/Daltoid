@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: f64383cde08125b449d62a91299488a4
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: NTS Akkhara
+  fontNames:
+  - NTS Akkhara
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: de7e5e00e3bb5d0419f02e38cdf5a7b1, type: 3}
+  - {fileID: 12800000, guid: cd1de6a34b57faa45a2e9b32d5b97ec0, type: 3}
+  - {fileID: 12800000, guid: e6e924655bfe3f64fbf94b48ce7716f2, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
