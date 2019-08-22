@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class MeleeRangerEnemy : Enemy
 {
+    public ParticleSystem death;
 	public float damage = 10f;
 	[HideInInspector] public Animator animator;
 
@@ -28,11 +29,10 @@ public class MeleeRangerEnemy : Enemy
 
 		AudioManager.instance.PlaySound("Death1");
 
-		animator.SetTrigger("Death");
-		Destroy(GetComponent<PatrolController>());
-		GetComponent<Rigidbody2D>().velocity = Vector3.zero;
-		GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-
-		Destroy(gameObject, 5f);
-	}
+        animator.SetTrigger("Death");
+        
+        death.Play();
+        Destroy(gameObject, 5f);
+        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+    }
 }
