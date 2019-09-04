@@ -5,7 +5,8 @@ using Tools;
 
 public class FlameThrowerEnemy : Enemy
 {
-	[HideInInspector] public Weapon weapon_1;
+    public ParticleSystem deathParticle;
+    [HideInInspector] public Weapon weapon_1;
 	[HideInInspector] public Weapon weapon_2;
 
 	private ParticleSystem death;
@@ -38,6 +39,8 @@ public class FlameThrowerEnemy : Enemy
 		AudioManager.instance.PlaySound("Gravitron 2");
 
 		this.death.Play();
+
+        deathParticle.Play();
 
 		this.body.gameObject.SetActive(false);
 

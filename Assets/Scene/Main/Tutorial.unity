@@ -289,7 +289,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -50}
+  m_AnchoredPosition: {x: 0, y: -9}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &631970131
@@ -517,7 +517,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 70}
+  m_AnchoredPosition: {x: 0, y: 84}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1050776796
@@ -542,10 +542,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 59573a204f7bac0469210f4e07015c19, type: 3}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
+    m_MinSize: 4
     m_MaxSize: 57
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -553,11 +553,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 0.85
-  m_Text: 'Kill everything.
+  m_Text: 'You have been captured.
 
-    Do not get killed by everything.
+    Your goal is to escape.
 
-    Using matching colors is important.
+    Use matching color to inflict more damages to enemies.
 
 
 '
@@ -583,11 +583,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterDuration: 0.1
   punctuationDuration: 0.75
-  text: 'Kill everything.
+  text: 'You have been captured.
 
-    Do not get killed by everything.
+    Your goal is to escape.
 
-    Using matching <color=yellow>colors</color> is important.'
+    Use matching <color=yellow>colors</color> to inflict more damages to enemies.'
   onEndReading:
     m_PersistentCalls:
       m_Calls:
@@ -898,7 +898,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 35}
+  m_AnchoredPosition: {x: 0, y: 6}
   m_SizeDelta: {x: 165, y: 40}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2019529169
@@ -1072,7 +1072,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -35}
+  m_AnchoredPosition: {x: 0, y: 7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2100170054
@@ -1097,10 +1097,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 59573a204f7bac0469210f4e07015c19, type: 3}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
+    m_MinSize: 0
     m_MaxSize: 57
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -1108,14 +1108,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 0.85
-  m_Text: 'You die, you lose.
-
-    You lose, you retry.
-
-    You retry, you may die.
-
-
-'
+  m_Text: "Q, D\t\tMove\nZ\t\tJump\nMouse\t\tAim and shoot\nS\t\tPick up weapons,
+    use teleporter\nSpace \t\tDash\n\n"
 --- !u!222 &2100170055
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1138,11 +1132,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterDuration: 0.1
   punctuationDuration: 0.75
-  text: 'You die, you lose.
+  text: 'Controls :
 
-    You lose, you retry.
+    <color=red>Q</color>, <color=red>D</color> to Move, <color=red>Z</color> to Jump,
+    <color=red>Space</color> to Dash,
 
-    You retry, you may <color=red>die</color>.'
+    <color=red>Mouse</color> to Aim and shoot
+
+    <color=red>S</color> to Pick Up Weapons, Use Teleporter
+
+    <color=red>C</color> to Discard Weapon
+
+    <color=red>1-5 top keys</color> or <color=red>scroll wheel</color> to Change Current
+    Weapon
+
+'
   onEndReading:
     m_PersistentCalls:
       m_Calls: []

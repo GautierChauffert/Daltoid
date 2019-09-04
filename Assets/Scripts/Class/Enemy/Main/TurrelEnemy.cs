@@ -5,7 +5,8 @@ using Tools;
 
 public class TurrelEnemy : Enemy
 {
-	[HideInInspector] public Weapon weapon;
+    public ParticleSystem deathParticle;
+    [HideInInspector] public Weapon weapon;
 	private ParticleSystem death;
 
 	protected override void Awake()
@@ -31,6 +32,8 @@ public class TurrelEnemy : Enemy
 		base.Death();
 
 		AudioManager.instance.PlaySound("Gravitron 2");
+
+        deathParticle.Play();
 
 		this.death.Play();
 

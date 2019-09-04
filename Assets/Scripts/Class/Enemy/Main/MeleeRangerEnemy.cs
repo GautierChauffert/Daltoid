@@ -30,6 +30,12 @@ public class MeleeRangerEnemy : Enemy
 		AudioManager.instance.PlaySound("Death1");
 
         animator.SetTrigger("Death");
+
+        if(this.gameObject.GetComponentInChildren<TurrelEnemy>())
+        {
+            Destroy(this.gameObject.transform.GetChild(2).gameObject);
+            death.Play();
+        }
         
         death.Play();
         Destroy(gameObject, 5f);

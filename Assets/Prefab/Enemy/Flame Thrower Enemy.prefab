@@ -222,7 +222,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.2509804, g: 0.28235295, b: 0.27058825, a: 1}
+      maxColor: {r: 0.11485406, g: 0.796197, b: 0.8396226, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4938,7 +4938,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: 3da61976ca749a74aab69b4189bc90fb, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.7361106, b: 0.9622642, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5073,7 +5073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cb266b834f2894289f514ef5343096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.032707386, g: 0.8253213, b: 0.990566, a: 1}
   behaviour: {fileID: 0}
   myTransform: {fileID: 0}
   onDeath:
@@ -5082,8 +5082,9 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   _life: 100
-  rangeOfView: 5
+  rangeOfView: 10
   isFiring: 0
+  deathParticle: {fileID: 234079997898097627}
   weapon_1: {fileID: 0}
   weapon_2: {fileID: 0}
 --- !u!1 &6063848666897258800
@@ -5133,10 +5134,10 @@ MonoBehaviour:
   handle: {x: 0, y: 0}
   bulletPrefab: {fileID: 191952030133179143, guid: e802b78b3b7c3284d8f4a7ae2707b0b1,
     type: 3}
-  color: {r: 1, g: 0.49217367, b: 0, a: 1}
-  damage: 5
+  color: {r: 0, g: 0.71711206, b: 1, a: 1}
+  damage: 50
   accuracy: 75
-  shotRate: 0.01
+  shotRate: 0.25
 --- !u!1 &6063848667819841626
 GameObject:
   m_ObjectHideFlags: 0
@@ -5438,9 +5439,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -10
+  m_SortingOrder: -8
   m_Sprite: {fileID: 21300000, guid: 0341e019e5ffcc841a9a61a566683929, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.9158478, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5577,7 +5578,7 @@ MonoBehaviour:
   handle: {x: 0, y: 0}
   bulletPrefab: {fileID: 191952030133179143, guid: e802b78b3b7c3284d8f4a7ae2707b0b1,
     type: 3}
-  color: {r: 1, g: 0.49217367, b: 0, a: 1}
-  damage: 5
+  color: {r: 0, g: 0.87040925, b: 1, a: 1}
+  damage: 50
   accuracy: 75
-  shotRate: 0.01
+  shotRate: 0.25

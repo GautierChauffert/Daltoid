@@ -132,7 +132,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: 3da61976ca749a74aab69b4189bc90fb, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.0058587003, g: 0.7924528, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d246c2725d938049b357811827ad23e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 0, b: 0, a: 1}
+  color: {r: 0.124566324, g: 0.764151, b: 0.075694196, a: 1}
   behaviour: {fileID: 0}
   myTransform: {fileID: 0}
   onDeath:
@@ -276,8 +276,9 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   _life: 100
-  rangeOfView: 10
+  rangeOfView: 15
   isFiring: 0
+  deathParticle: {fileID: 7926225590945808040}
   weapon: {fileID: 0}
 --- !u!1 &3297508793498479258
 GameObject:
@@ -356,8 +357,8 @@ MonoBehaviour:
   handle: {x: 0, y: 0}
   bulletPrefab: {fileID: 191952030133179143, guid: ebe6a134a1275a64789a4bf901eafc12,
     type: 3}
-  color: {r: 1, g: 0, b: 0, a: 1}
-  damage: 10
+  color: {r: 0.112273075, g: 0.8207547, b: 0.1767556, a: 1}
+  damage: 50
   accuracy: 90
   shotRate: 0.05
 --- !u!1 &4244392608139470121
@@ -724,7 +725,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.11053753, g: 0.11320752, b: 0.11220627, a: 1}
+      maxColor: {r: 0.261625, g: 0.81960785, b: 0.1215686, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

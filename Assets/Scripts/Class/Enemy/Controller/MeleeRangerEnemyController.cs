@@ -33,17 +33,19 @@ public class MeleeRangerEnemyController : MovementController
 		int i = Random.Range(1, 4);
 
 		this.rb.velocity = Vector2.zero;
-
-		this.enemyAnimator.SetBool("Walk", false);
-		this.enemyAnimator.SetBool("Shoot", true);
+        
+		this.enemyAnimator.Play("Shoot");
 
 		recul = (playerTransform.position - transform.position).normalized;
 		this.playerDamageable.GetDamagedBy(enemy.color, enemy.damage);
 		this.playerCharacter.Impact(recul * 1000f);
 
 		AudioManager.instance.PlaySound("EnemyHitting");
-		AudioManager.instance.PlaySound("Enemy" + i);
-	}
+        AudioManager.instance.PlaySound("Enemy" + i);
+      
+
+
+    }
 
 	public IEnumerator Patrol()
 	{

@@ -59,7 +59,7 @@ public class PlayerJumpController : PlayerController<PlayerJumpController>
 		while(this.pc.inputs.isHoldingJump && this.jumpTime > 0f && !this.pc.inputs.isGrounded && !this.pc.inputs.isCeiled) {
 
 			// add force jump
-			this.rb.AddForce(this.playerData.jumpSpeed * 0.6f * this.playerData.jumpHoldCoeff * Vector2.up, ForceMode2D.Force);
+			this.rb.AddForce(this.playerData.jumpSpeed * 0.65f * this.playerData.jumpHoldCoeff * Vector2.up, ForceMode2D.Force);
 
 			this.jumpTime -= Time.fixedDeltaTime;
 
